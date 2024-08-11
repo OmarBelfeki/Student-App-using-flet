@@ -5,8 +5,6 @@ import sqlite3
 def create_table() -> None:
     conn = sqlite3.connect(database="student.db", check_same_thread=False)
     cur = conn.cursor()
-    cur.execute("drop table student")
-    conn.commit()
     cur.execute("""
         create table if not exists student(
             id integer primary key autoincrement,
