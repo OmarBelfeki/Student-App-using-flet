@@ -36,7 +36,7 @@ def get_data() -> list[tuple]:
     return data
 
 
-def get_sum(data: list[tuple], i: int):
+def get_sum(data: list[tuple], i: int) -> int | float:
     for j in data:
         if j[0] == i+1:
             return sum(j[5:])
@@ -45,7 +45,7 @@ def get_sum(data: list[tuple], i: int):
 
 
 class Dialog(ft.AlertDialog):
-    def __init__(self, ee: sqlite3.Error):
+    def __init__(self, ee: sqlite3.Error) -> None:
         super().__init__()
 
         self.modal = True
