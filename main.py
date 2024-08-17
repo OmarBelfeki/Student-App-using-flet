@@ -336,8 +336,8 @@ class Main(ft.View):
 def main(page: ft.Page) -> None:
     page.title = "Student Note"
     #  page.window.top = 1
-    page.window.height = 740
-    page.window.width = 370
+    page.window.height = 760
+    page.window.width = 390
     #  page.window.left = 960
     page.theme_mode = ft.ThemeMode.LIGHT
 
